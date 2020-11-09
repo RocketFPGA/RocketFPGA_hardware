@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for RocketFPGA
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -36,6 +36,11 @@ IncludeDesignInRelease=0
 [Preferences]
 PrefsVaultGUID=
 PrefsRevisionGUID=
+
+[Release]
+ReleaseTarget=1
+ReleaseFolderPath=[OutputPath]
+ReleaseZipPath=[OutputPath][ProjectName].zip
 
 [Document1]
 DocumentPath=pcb\panel.PcbDoc
@@ -171,7 +176,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DPNPNUWT
 
 [Document9]
 DocumentPath=lib\RocketFPGA.SCHLIB
@@ -188,7 +193,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UISIDIBL
 
 [Document10]
 DocumentPath=pcb\RocketFPGA.PcbDoc
@@ -224,6 +229,26 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=output\Bill of Materials-RocketFPGA.xls
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for RocketFPGA\Design Rule Check - RocketFPGA.html
+DItemRevisionGUID=
+
+[Parameter1]
+Name=author_name
+Value=Luis Sánchez & Pablo Garrido
+
+[Parameter2]
+Name=release_date
+Value=01/06/2020
+
+[Parameter3]
+Name=revision_no
+Value=v2
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -234,8 +259,28 @@ OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
 
+[Configuration2]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
+
+[Configuration3]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
+
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for RocketFPGA
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -408,6 +453,8 @@ OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
 PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration9_Name1=OutputConfigurationParameter1
+Configuration9_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0
 OutputType10=SimView Print
 OutputName10=SimView Prints
 OutputDocumentPath10=
@@ -1186,130 +1233,130 @@ NetClassSeparateForBusSections=0
 SelectedOnly=0
 UpdateVariants=1
 PartTypes=0
-ComponentLibIdentifierKind0=Any
-ComponentLibraryIdentifier0=
-ComponentDesignItemID0=Capacitor Electrolitic
-ComponentSymbolReference0=Capacitor Electrolitic
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=NodeFPGA.SCHLIB
+ComponentDesignItemID0=629105136821
+ComponentSymbolReference0=629105136821
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=ADCS.SCHLIB
-ComponentDesignItemID1=ICE40UP5K-SG48ITR
-ComponentSymbolReference1=ICE40UP5K-SG48ITR
+ComponentLibraryIdentifier1=NodeFPGA.SCHLIB
+ComponentDesignItemID1=Capacitor Electrolitic
+ComponentSymbolReference1=Capacitor Electrolitic
 ComponentUpdate1=1
 ComponentIsDeviceSheet1=0
 ComponentLibIdentifierKind2=Library Name And Type
-ComponentLibraryIdentifier2=GSATFPGA.SCHLIB
-ComponentDesignItemID2=629105136821
-ComponentSymbolReference2=629105136821
+ComponentLibraryIdentifier2=NodeFPGA.SCHLIB
+ComponentDesignItemID2=Capacitor
+ComponentSymbolReference2=Capacitor
 ComponentUpdate2=1
 ComponentIsDeviceSheet2=0
 ComponentLibIdentifierKind3=Library Name And Type
-ComponentLibraryIdentifier3=GSATFPGA.SCHLIB
-ComponentDesignItemID3=Canned Oscilator
-ComponentSymbolReference3=Canned Oscilator
+ComponentLibraryIdentifier3=NodeFPGA.SCHLIB
+ComponentDesignItemID3=CH551G
+ComponentSymbolReference3=CH551G
 ComponentUpdate3=1
 ComponentIsDeviceSheet3=0
 ComponentLibIdentifierKind4=Library Name And Type
-ComponentLibraryIdentifier4=GSATFPGA.SCHLIB
-ComponentDesignItemID4=CH551G
-ComponentSymbolReference4=CH551G
+ComponentLibraryIdentifier4=NodeFPGA.SCHLIB
+ComponentDesignItemID4=FSM6JH
+ComponentSymbolReference4=FSM6JH
 ComponentUpdate4=1
 ComponentIsDeviceSheet4=0
 ComponentLibIdentifierKind5=Library Name And Type
-ComponentLibraryIdentifier5=GSATFPGA.SCHLIB
-ComponentDesignItemID5=LED_SMD
-ComponentSymbolReference5=LED_SMD
+ComponentLibraryIdentifier5=NodeFPGA.SCHLIB
+ComponentDesignItemID5=ICE40UP5K-SG48ITR
+ComponentSymbolReference5=ICE40UP5K-SG48ITR
 ComponentUpdate5=1
 ComponentIsDeviceSheet5=0
 ComponentLibIdentifierKind6=Library Name And Type
-ComponentLibraryIdentifier6=GSATFPGA.SCHLIB
-ComponentDesignItemID6=TLV7111225DSER
-ComponentSymbolReference6=TLV7111225DSER
+ComponentLibraryIdentifier6=NodeFPGA.SCHLIB
+ComponentDesignItemID6=KIA1117-3.3
+ComponentSymbolReference6=KIA1117-3.3
 ComponentUpdate6=1
 ComponentIsDeviceSheet6=0
 ComponentLibIdentifierKind7=Library Name And Type
 ComponentLibraryIdentifier7=NodeFPGA.SCHLIB
-ComponentDesignItemID7=Bridge
-ComponentSymbolReference7=Bridge
+ComponentDesignItemID7=LED_SMD
+ComponentSymbolReference7=LED_SMD
 ComponentUpdate7=1
 ComponentIsDeviceSheet7=0
 ComponentLibIdentifierKind8=Library Name And Type
 ComponentLibraryIdentifier8=NodeFPGA.SCHLIB
-ComponentDesignItemID8=Capacitor
-ComponentSymbolReference8=Capacitor
-ComponentUpdate8=0
+ComponentDesignItemID8=Resistor
+ComponentSymbolReference8=Resistor
+ComponentUpdate8=1
 ComponentIsDeviceSheet8=0
 ComponentLibIdentifierKind9=Library Name And Type
 ComponentLibraryIdentifier9=NodeFPGA.SCHLIB
-ComponentDesignItemID9=Header 11_1
-ComponentSymbolReference9=Header 11_1
+ComponentDesignItemID9=ResistorArray_4
+ComponentSymbolReference9=ResistorArray_4
 ComponentUpdate9=1
 ComponentIsDeviceSheet9=0
 ComponentLibIdentifierKind10=Library Name And Type
 ComponentLibraryIdentifier10=NodeFPGA.SCHLIB
-ComponentDesignItemID10=KIA1117-3.3
-ComponentSymbolReference10=KIA1117-3.3
+ComponentDesignItemID10=SelectionResistor
+ComponentSymbolReference10=SelectionResistor
 ComponentUpdate10=1
 ComponentIsDeviceSheet10=0
 ComponentLibIdentifierKind11=Library Name And Type
 ComponentLibraryIdentifier11=NodeFPGA.SCHLIB
-ComponentDesignItemID11=Resistor
-ComponentSymbolReference11=Resistor
-ComponentUpdate11=0
+ComponentDesignItemID11=SJ-3523-SMT-TR
+ComponentSymbolReference11=SJ-3523-SMT-TR
+ComponentUpdate11=1
 ComponentIsDeviceSheet11=0
 ComponentLibIdentifierKind12=Library Name And Type
 ComponentLibraryIdentifier12=NodeFPGA.SCHLIB
-ComponentDesignItemID12=ResistorArray_4
-ComponentSymbolReference12=ResistorArray_4
+ComponentDesignItemID12=TLV7111225DSER
+ComponentSymbolReference12=TLV7111225DSER
 ComponentUpdate12=1
 ComponentIsDeviceSheet12=0
 ComponentLibIdentifierKind13=Library Name And Type
 ComponentLibraryIdentifier13=NodeFPGA.SCHLIB
-ComponentDesignItemID13=SelectionResistor
-ComponentSymbolReference13=SelectionResistor
+ComponentDesignItemID13=W25Q32JV
+ComponentSymbolReference13=W25Q32JV
 ComponentUpdate13=1
 ComponentIsDeviceSheet13=0
 ComponentLibIdentifierKind14=Library Name And Type
-ComponentLibraryIdentifier14=NodeFPGA.SCHLIB
-ComponentDesignItemID14=SJ-3523-SMT-TR
-ComponentSymbolReference14=SJ-3523-SMT-TR
+ComponentLibraryIdentifier14=OpenFPGA.SCHLIB
+ComponentDesignItemID14=Resistor
+ComponentSymbolReference14=Resistor
 ComponentUpdate14=1
 ComponentIsDeviceSheet14=0
 ComponentLibIdentifierKind15=Library Name And Type
-ComponentLibraryIdentifier15=NodeFPGA.SCHLIB
-ComponentDesignItemID15=SPU0410LR5H-1
-ComponentSymbolReference15=SPU0410LR5H-1
+ComponentLibraryIdentifier15=RocketFPGA.SCHLIB
+ComponentDesignItemID15=Canned Oscilator
+ComponentSymbolReference15=Canned Oscilator
 ComponentUpdate15=1
 ComponentIsDeviceSheet15=0
 ComponentLibIdentifierKind16=Library Name And Type
-ComponentLibraryIdentifier16=NodeFPGA.SCHLIB
-ComponentDesignItemID16=W25Q32JV
-ComponentSymbolReference16=W25Q32JV
+ComponentLibraryIdentifier16=RocketFPGA.SCHLIB
+ComponentDesignItemID16=Header 11_1
+ComponentSymbolReference16=Header 11_1
 ComponentUpdate16=1
 ComponentIsDeviceSheet16=0
 ComponentLibIdentifierKind17=Library Name And Type
-ComponentLibraryIdentifier17=NodeFPGA.SCHLIB
-ComponentDesignItemID17=WM8731
-ComponentSymbolReference17=WM8731
+ComponentLibraryIdentifier17=RocketFPGA.SCHLIB
+ComponentDesignItemID17=SJ-3523-SMT-TR
+ComponentSymbolReference17=SJ-3523-SMT-TR
 ComponentUpdate17=1
 ComponentIsDeviceSheet17=0
 ComponentLibIdentifierKind18=Library Name And Type
-ComponentLibraryIdentifier18=OpenFPGA.SCHLIB
-ComponentDesignItemID18=FSM6JH
-ComponentSymbolReference18=FSM6JH
+ComponentLibraryIdentifier18=RocketFPGA.SCHLIB
+ComponentDesignItemID18=SPU0410LR5H-1
+ComponentSymbolReference18=SPU0410LR5H-1
 ComponentUpdate18=1
 ComponentIsDeviceSheet18=0
 ComponentLibIdentifierKind19=Library Name And Type
-ComponentLibraryIdentifier19=OpenFPGA.SCHLIB
-ComponentDesignItemID19=Resistor
-ComponentSymbolReference19=Resistor
-ComponentUpdate19=0
+ComponentLibraryIdentifier19=RocketFPGA.SCHLIB
+ComponentDesignItemID19=WM8731
+ComponentSymbolReference19=WM8731
+ComponentUpdate19=1
 ComponentIsDeviceSheet19=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
-PreserveParameterLocations=1
+PreserveParameterLocations=0
 PreserveParameterVisibility=1
 DoGraphics=1
 DoParameters=1
@@ -1351,118 +1398,128 @@ ParameterName14=LatestRevisionNote
 ParameterUpdate14=1
 ParameterName15=Library Reference
 ParameterUpdate15=1
-ParameterName16=ManualRef
+ParameterName16=Link
 ParameterUpdate16=1
-ParameterName17=Manufacturer_Name
+ParameterName17=Link 2
 ParameterUpdate17=1
-ParameterName18=Manufacturer_Part_Number
+ParameterName18=Manufacturer_Name
 ParameterUpdate18=1
-ParameterName19=ManufacturerReference
+ParameterName19=Manufacturer_Part_Number
 ParameterUpdate19=1
-ParameterName20=Mounting Technology
+ParameterName20=ManufacturerRefenrece
 ParameterUpdate20=1
-ParameterName21=Mouser Part Number
+ParameterName21=ManufacturerReference
 ParameterUpdate21=1
-ParameterName22=Operating Temperature
+ParameterName22=Mounting Technology
 ParameterUpdate22=1
-ParameterName23=Orientation
+ParameterName23=Mouser Part Number
 ParameterUpdate23=1
-ParameterName24=Package
+ParameterName24=Operating Temperature
 ParameterUpdate24=1
-ParameterName25=Packaging
+ParameterName25=Orientation
 ParameterUpdate25=1
-ParameterName26=Part Number
+ParameterName26=Package
 ParameterUpdate26=1
-ParameterName27=price
+ParameterName27=Packaging
 ParameterUpdate27=1
-ParameterName28=Published Date
+ParameterName28=Parameter 1
 ParameterUpdate28=1
-ParameterName29=Publisher
+ParameterName29=Part Number
 ParameterUpdate29=1
-ParameterName30=Rated Current
+ParameterName30=price
 ParameterUpdate30=1
-ParameterName31=Supplier 1
+ParameterName31=Published Date
 ParameterUpdate31=1
-ParameterName32=Supplier Part Number 1
+ParameterName32=Publisher
 ParameterUpdate32=1
-ParameterName33=Value
+ParameterName33=Rated Current
 ParameterUpdate33=1
-ParameterName34=vendor
+ParameterName34=Supplier 1
 ParameterUpdate34=1
-ParameterName35=vendorID
+ParameterName35=Supplier Part Number 1
 ParameterUpdate35=1
-ParameterName36=Voltage Rating
+ParameterName36=Value
 ParameterUpdate36=1
+ParameterName37=vendor
+ParameterUpdate37=1
+ParameterName38=Vendor 2
+ParameterUpdate38=1
+ParameterName39=vendor2
+ParameterUpdate39=1
+ParameterName40=vendorID
+ParameterUpdate40=1
+ParameterName41=Voltage Rating
+ParameterUpdate41=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=*CUI_SJ-3523-SMT-TR
+ModelName0=0603 CAP
 ModelUpdate0=1
 ModelType1=PCBLIB
-ModelName1=0603 CAP
+ModelName1=0805
 ModelUpdate1=1
 ModelType2=PCBLIB
-ModelName2=0805
+ModelName2=0805 + TH
 ModelUpdate2=1
 ModelType3=PCBLIB
-ModelName3=0805 + TH
+ModelName3=0805_L
 ModelUpdate3=1
 ModelType4=PCBLIB
-ModelName4=0805_L
+ModelName4=0805_N
 ModelUpdate4=1
 ModelType5=PCBLIB
-ModelName5=0805_N
+ModelName5=629105136821
 ModelUpdate5=1
 ModelType6=PCBLIB
-ModelName6=629105136821
+ModelName6=AXIAL-0.3
 ModelUpdate6=1
 ModelType7=PCBLIB
-ModelName7=AXIAL-0.3
+ModelName7=AXIAL-0.4
 ModelUpdate7=1
 ModelType8=PCBLIB
-ModelName8=AXIAL-0.4
+ModelName8=AXIAL-0.5
 ModelUpdate8=1
 ModelType9=PCBLIB
-ModelName9=AXIAL-0.5
+ModelName9=AXIAL-0.6
 ModelUpdate9=1
 ModelType10=PCBLIB
-ModelName10=AXIAL-0.6
+ModelName10=AXIAL-0.7
 ModelUpdate10=1
 ModelType11=PCBLIB
-ModelName11=AXIAL-0.7
+ModelName11=AXIAL-0.8
 ModelUpdate11=1
 ModelType12=PCBLIB
-ModelName12=AXIAL-0.8
+ModelName12=AXIAL-0.9
 ModelUpdate12=1
 ModelType13=PCBLIB
-ModelName13=AXIAL-0.9
+ModelName13=AXIAL-1.0
 ModelUpdate13=1
 ModelType14=PCBLIB
-ModelName14=AXIAL-1.0
+ModelName14=Canned Oscilator
 ModelUpdate14=1
 ModelType15=PCBLIB
-ModelName15=Bridge
+ModelName15=canned oscillator small
 ModelUpdate15=1
 ModelType16=PCBLIB
-ModelName16=Canned Oscilator
+ModelName16=CAPAE-G 10mmx10mm
 ModelUpdate16=1
 ModelType17=PCBLIB
-ModelName17=CAPAE-G 10mmx10mm
+ModelName17=CAPAE-G B CASE
 ModelUpdate17=1
 ModelType18=PCBLIB
-ModelName18=CAPAE-G B CASE
+ModelName18=CAPCP3216X16N
 ModelUpdate18=1
 ModelType19=PCBLIB
-ModelName19=CAPCP3216X16N
+ModelName19=CH551
 ModelUpdate19=1
 ModelType20=PCBLIB
-ModelName20=CH551
+ModelName20=CUI_SJ-3523-SMT-TR
 ModelUpdate20=1
 ModelType21=PCBLIB
 ModelName21=DSE 6
 ModelUpdate21=1
 ModelType22=PCBLIB
-ModelName22=HDR1X11
+ModelName22=HDR1X12
 ModelUpdate22=1
 ModelType23=PCBLIB
 ModelName23=QFN50P700X700X100-49N-D
@@ -1515,42 +1572,177 @@ ModelUpdate36=1
 SelectedOnly=0
 UpdateVariants=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=NodeFPGA.SCHLIB
+ComponentDesignItemID0=629105136821
+ComponentSymbolReference0=629105136821
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=NodeFPGA.SCHLIB
+ComponentDesignItemID1=Bridge
+ComponentSymbolReference1=Bridge
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=NodeFPGA.SCHLIB
+ComponentDesignItemID2=Canned Oscilator
+ComponentSymbolReference2=Canned Oscilator
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=NodeFPGA.SCHLIB
+ComponentDesignItemID3=Capacitor Electrolitic
+ComponentSymbolReference3=Capacitor Electrolitic
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=NodeFPGA.SCHLIB
+ComponentDesignItemID4=Capacitor
+ComponentSymbolReference4=Capacitor
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=NodeFPGA.SCHLIB
+ComponentDesignItemID5=CH551G
+ComponentSymbolReference5=CH551G
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=NodeFPGA.SCHLIB
+ComponentDesignItemID6=FSM6JH
+ComponentSymbolReference6=FSM6JH
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=NodeFPGA.SCHLIB
+ComponentDesignItemID7=Header 11_1
+ComponentSymbolReference7=Header 11_1
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=NodeFPGA.SCHLIB
+ComponentDesignItemID8=ICE40UP5K-SG48ITR
+ComponentSymbolReference8=ICE40UP5K-SG48ITR
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=NodeFPGA.SCHLIB
+ComponentDesignItemID9=KIA1117-3.3
+ComponentSymbolReference9=KIA1117-3.3
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
+ComponentLibIdentifierKind10=Library Name And Type
+ComponentLibraryIdentifier10=NodeFPGA.SCHLIB
+ComponentDesignItemID10=LED_SMD
+ComponentSymbolReference10=LED_SMD
+ComponentUpdate10=1
+ComponentIsDeviceSheet10=0
+ComponentLibIdentifierKind11=Library Name And Type
+ComponentLibraryIdentifier11=NodeFPGA.SCHLIB
+ComponentDesignItemID11=Resistor
+ComponentSymbolReference11=Resistor
+ComponentUpdate11=1
+ComponentIsDeviceSheet11=0
+ComponentLibIdentifierKind12=Library Name And Type
+ComponentLibraryIdentifier12=NodeFPGA.SCHLIB
+ComponentDesignItemID12=ResistorArray_4
+ComponentSymbolReference12=ResistorArray_4
+ComponentUpdate12=1
+ComponentIsDeviceSheet12=0
+ComponentLibIdentifierKind13=Library Name And Type
+ComponentLibraryIdentifier13=NodeFPGA.SCHLIB
+ComponentDesignItemID13=SelectionResistor
+ComponentSymbolReference13=SelectionResistor
+ComponentUpdate13=1
+ComponentIsDeviceSheet13=0
+ComponentLibIdentifierKind14=Library Name And Type
+ComponentLibraryIdentifier14=NodeFPGA.SCHLIB
+ComponentDesignItemID14=SJ-3523-SMT-TR
+ComponentSymbolReference14=SJ-3523-SMT-TR
+ComponentUpdate14=1
+ComponentIsDeviceSheet14=0
+ComponentLibIdentifierKind15=Library Name And Type
+ComponentLibraryIdentifier15=NodeFPGA.SCHLIB
+ComponentDesignItemID15=SPU0410LR5H-1
+ComponentSymbolReference15=SPU0410LR5H-1
+ComponentUpdate15=1
+ComponentIsDeviceSheet15=0
+ComponentLibIdentifierKind16=Library Name And Type
+ComponentLibraryIdentifier16=NodeFPGA.SCHLIB
+ComponentDesignItemID16=TLV7111225DSER
+ComponentSymbolReference16=TLV7111225DSER
+ComponentUpdate16=1
+ComponentIsDeviceSheet16=0
+ComponentLibIdentifierKind17=Library Name And Type
+ComponentLibraryIdentifier17=NodeFPGA.SCHLIB
+ComponentDesignItemID17=W25Q32JV
+ComponentSymbolReference17=W25Q32JV
+ComponentUpdate17=1
+ComponentIsDeviceSheet17=0
+ComponentLibIdentifierKind18=Library Name And Type
+ComponentLibraryIdentifier18=NodeFPGA.SCHLIB
+ComponentDesignItemID18=WM8731
+ComponentSymbolReference18=WM8731
+ComponentUpdate18=1
+ComponentIsDeviceSheet18=0
+ComponentLibIdentifierKind19=Library Name And Type
+ComponentLibraryIdentifier19=OpenFPGA.SCHLIB
+ComponentDesignItemID19=Resistor
+ComponentSymbolReference19=Resistor
+ComponentUpdate19=1
+ComponentIsDeviceSheet19=0
 
 [NetInfos]
-Net1=NetName=NetJ2_2|NetColor=$00FF6EFF
-Net2=NetName=NetC24_1|NetColor=$00FF99CF
-Net3=NetName=CDC_ADCLRC|NetColor=clYellow
-Net4=NetName=FLASH_MEM_SS|NetColor=$0000BE00
-Net5=NetName=SPI_MOSI|NetColor=$0000BE00
-Net6=NetName=SPI_MISO|NetColor=$0000BE00
-Net7=NetName=NetC26_2|NetColor=$00FF6EFF
-Net8=NetName=CDC_DACDAT|NetColor=clYellow
-Net9=NetName=CDC_BCLK|NetColor=clYellow
-Net10=NetName=CDC_MCLK|NetColor=clYellow
-Net11=NetName=NetR16_3|NetColor=$000083FD
-Net12=NetName=NetC26_1|NetColor=$00FF6EFF
-Net13=NetName=SPI_SCK|NetColor=$0000BE00
-Net14=NetName=2V5|NetColor=$00FFFF6E
-Net15=NetName=NetR15_3|NetColor=$000083FD
-Net16=NetName=NetC25_2|NetColor=$00FF99CF
-Net17=NetName=NetJ2_3|NetColor=$00FF6EFF
-Net18=NetName=NetC29_2|NetColor=$00FF6EFF
-Net19=NetName=NetC31_2|NetColor=$000083FD
-Net20=NetName=NetC29_1|NetColor=$00FF6EFF
-Net21=NetName=NetJ3_2|NetColor=$007F0311
-Net22=NetName=NetC24_2|NetColor=$00FF99CF
-Net23=NetName=3V3|NetColor=$00FFFF6E
-Net24=NetName=NetC32_2|NetColor=$00007EC5
-Net25=NetName=CDC_ADCDAT|NetColor=clYellow
-Net26=NetName=NetC25_1|NetColor=$00FF99CF
-Net27=NetName=1V2|NetColor=$00FFFF6E
-Net28=NetName=NetJ3_3|NetColor=$007F0311
-Net29=NetName=NetC28_1|NetColor=$000083FD
-Net30=NetName=MICIN|NetColor=$00007EC5
-Net31=NetName=CDC_DACLRC|NetColor=clYellow
-Net32=NetName=NetC28_2|NetColor=$000083FD
-Net33=NetName=NetC31_1|NetColor=$000083FD
-Net34=NetName=NetC32_1|NetColor=$00007EC5
+Net1=NetName=AUDIO_IN_L|NetColor=$00FF6EFF
+Net2=NetName=SPI_MOSI|NetColor=$0000BE00
+Net3=NetName=SPI_MISO|NetColor=$0000BE00
+Net4=NetName=NetC26_2|NetColor=$00FF6EFF
+Net5=NetName=CDC_DACDAT|NetColor=clYellow
+Net6=NetName=CDC_MCLK|NetColor=clYellow
+Net7=NetName=MEM_DI_IO0|NetColor=$0000BE00
+Net8=NetName=AUDIO_OUT_R|NetColor=$00660066
+Net9=NetName=NetC26_1|NetColor=$00FF6EFF
+Net10=NetName=CODEC_CLK|NetColor=$0000BE00
+Net11=NetName=2V5|NetColor=$00FFFF6E
+Net12=NetName=NetC25_2|NetColor=$00FF99CF
+Net13=NetName=NetJ2_3|NetColor=$00FF6EFF
+Net14=NetName=NetC29_2|NetColor=$00FF6EFF
+Net15=NetName=NetC31_2|NetColor=$000083FD
+Net16=NetName=NetC29_1|NetColor=$00FF6EFF
+Net17=NetName=NetJ3_2|NetColor=$007F0311
+Net18=NetName=CODEC_CS|NetColor=$0000BE00
+Net19=NetName=NetC24_2|NetColor=$00FF99CF
+Net20=NetName=MEM_D0_IO1|NetColor=$0000BE00
+Net21=NetName=NetC32_2|NetColor=$00007EC5
+Net22=NetName=5V|NetColor=$00FFFF6E
+Net23=NetName=AUDIO_OUT_L|NetColor=$00660066
+Net24=NetName=MEM_CLK|NetColor=$0000BE00
+Net25=NetName=MEM_WP_IO2|NetColor=$0000BE00
+Net26=NetName=NetC28_2|NetColor=$000083FD
+Net27=NetName=NetC31_1|NetColor=$000083FD
+Net28=NetName=NetJ2_2|NetColor=$00FF6EFF
+Net29=NetName=NetC24_1|NetColor=$00FF99CF
+Net30=NetName=MEM_CS|NetColor=$0000BE00
+Net31=NetName=CDC_ADCLRC|NetColor=clYellow
+Net32=NetName=FLASH_MEM_SS|NetColor=$0000BE00
+Net33=NetName=NetR16_3|NetColor=$000083FD
+Net34=NetName=CDC_BCLK|NetColor=clYellow
+Net35=NetName=SPI_SCK|NetColor=$0000BE00
+Net36=NetName=NetR15_3|NetColor=$000083FD
+Net37=NetName=CODEC_DI|NetColor=$0000BE00
+Net38=NetName=HOLD|NetColor=$0000BE00
+Net39=NetName=MEM_HOLD_IO3|NetColor=$0000BE00
+Net40=NetName=3V3|NetColor=$00FFFF6E
+Net41=NetName=CDC_ADCDAT|NetColor=clYellow
+Net42=NetName=NetC25_1|NetColor=$00FF99CF
+Net43=NetName=1V2|NetColor=$00FFFF6E
+Net44=NetName=NetJ3_3|NetColor=$007F0311
+Net45=NetName=NetC28_1|NetColor=$000083FD
+Net46=NetName=MICIN|NetColor=$00007EC5
+Net47=NetName=AUDIO_IN_R|NetColor=$00FF6EFF
+Net48=NetName=CDC_DACLRC|NetColor=clYellow
+Net49=NetName=NetC32_1|NetColor=$00007EC5
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
